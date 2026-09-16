@@ -10,7 +10,7 @@ from pathlib import Path
 from email.message import EmailMessage
 from dotenv import load_dotenv, set_key
 
-ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+ENV_PATH = Path(__file__).resolve().parent / ".env"
 
 def config():
     if not ENV_PATH.exists():

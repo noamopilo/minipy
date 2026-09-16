@@ -1,0 +1,4 @@
+inquirer
+click
+python-dotenv
+requests

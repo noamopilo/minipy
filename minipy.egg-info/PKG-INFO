@@ -1,3 +1,14 @@
+Metadata-Version: 2.4
+Name: minipy
+Version: 0.1.0
+Author-email: Noé Ballieu <nonobal2812@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: inquirer
+Requires-Dist: click
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
 ![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)
 
 # **Minipy**
@@ -20,29 +31,27 @@ Minipy is a CLI tool that combines small/big python tools and games in one big t
 
 ## Installation
 
-To install minipy run this command in your terminal:
-
-```bash
-pip install minipykit
-
-```
+To install the tool use the tool pip.
 
 ---
 
 ## File structure
 
-This is the file structure of the package:
+This is the file structure of the app:
 
 ```md
 └── 📁minipy
-    └── 📁games
-        ├── snake.py
-    └── 📁tools
-        ├── dice.py
-        ├── link_shortner.py
-        ├── send_email.py
-    ├── __init__.py
-    └── main.py
+    └── 📁src
+        └── 📁games
+            ├── snake.py
+        └── 📁tools
+            ├── dice.py
+            ├── link_shortner.py
+            ├── send_email.py
+        ├── main.py
+    ├── pyproject.toml
+    ├── README.md
+    └── requirements.txt
 ```
 
 ---
@@ -54,7 +63,7 @@ For some tools/games you need some configuration. The configuration will redirec
 >### Link shortner
 
 You need to have a cuttly API key to be able to shorten links.
-To create one follow these steps:
+To create one follow this steps:
 
 1. Go to [https://cutt.ly](https://cutt.ly)
 2. Create an account / login
@@ -69,7 +78,7 @@ To create one follow these steps:
 
 You need to have a Google App-password to be able to send an email.
 This is a second password to your Google account, we can use it in our app to send an mail with Gmail.
-To create one follow these steps:
+To create one follow this steps:
 
 1. Go to your [Google account settings](https://myaccount.google.com/)
 2. In the menu on the left click **Security**
@@ -84,18 +93,12 @@ To create one follow these steps:
 
 ## Support
 
-For support you can make an **Issue** on the Github repo, thanks for helping with my project.
-
 ---
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
 ---
 
 ## Status
-
-Ongoing: I'm still working on this project and constantly adding new tools and features...
 
 ---

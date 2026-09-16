@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv, set_key
 from pathlib import Path
 
-ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+ENV_PATH = Path(__file__).resolve().parent / ".env"
 BASE_URL = 'https://cutt.ly/api/api.php'
 
 

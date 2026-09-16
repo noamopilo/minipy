@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+minipy/__init__.py
+minipy/main.py
+minipy.egg-info/PKG-INFO
+minipy.egg-info/SOURCES.txt
+minipy.egg-info/dependency_links.txt
+minipy.egg-info/entry_points.txt
+minipy.egg-info/requires.txt
+minipy.egg-info/top_level.txt
+minipy/games/snake.py
+minipy/tools/dice.py
+minipy/tools/link_shortner.py
+minipy/tools/send_email.py
