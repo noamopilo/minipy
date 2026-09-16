@@ -3,7 +3,9 @@ import os
 from dotenv import load_dotenv, set_key
 from pathlib import Path
 
-ENV_PATH = Path(__file__).resolve().parent / ".env"
+CONFIG_DIR = Path.home() / ".minipy"
+CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+ENV_PATH = CONFIG_DIR / ".env"
 BASE_URL = 'https://cutt.ly/api/api.php'
 
 
@@ -20,9 +22,8 @@ def config():
         print("We're gonna do some configuration.\n")
         print("Read the instructions in the \033]8;;https://github.com/noamopilo/minipy/blob/main/README.md\033\\README\033]8;;\033\\ on how to create a cuttly API key.")
         
-        if not api_key:
-            api_key = input("Input your cuttly API key: ").strip()
-            set_key(str(ENV_PATH), "CUTTLY_API_KEY", api_key)
+        api_key = input("Input your cuttly API key: ").strip()
+        set_key(str(ENV_PATH), "CUTTLY_API_KEY", api_key)
         
         print("Configuration succesfull!\n")
         load_dotenv(dotenv_path=ENV_PATH)

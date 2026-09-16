@@ -13,7 +13,9 @@ dependencies = [
     "inquirer",
     "click",
     "python-dotenv",
-    "requests"
+    "requests",
+    "PyPDF2",
+    "Pillow"
 ]
 
 [project.scripts]
