@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "dotenv"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minipy"
+version = "0.1.0"
+description = "Mini Python projects to learn, all in 1 CLI tool"
+requires-python = ">=3.10"
+dependencies = ["inquirer", "dotenv"]
+
+[project.scripts]
+minipy = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
