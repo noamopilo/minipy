@@ -80,9 +80,9 @@ def start(category, name):
         print("---------------------------------------------------")
         input("Press Enter to return to the menu...")
     except (KeyboardInterrupt, subprocess.CalledProcessError):
-        clear_screen()
+       # clear_screen()
         print("\n\nApp closed with Ctrl+C. Returning to main menu...")
-        time.sleep(1.5)
+        time.sleep(10)
     
 
     

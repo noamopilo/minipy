@@ -15,7 +15,8 @@ dependencies = [
     "python-dotenv",
     "requests",
     "PyPDF2",
-    "Pillow"
+    "Pillow",
+    "qrcode"
 ]
 
 [project.scripts]
