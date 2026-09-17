@@ -2,3 +2,7 @@ inquirer
 click
 python-dotenv
 requests
+PyPDF2
+Pillow
+qrcode
+pytubefix

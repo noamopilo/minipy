@@ -23,7 +23,7 @@ Minipy is a CLI tool that combines small/big python tools and games in one big t
 To install minipy run this command in your terminal:
 
 ```bash
-pip install minipykit
+pip install minipy-tools
 
 ```
 

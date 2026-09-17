@@ -52,7 +52,7 @@ def categorys():
 
 def projects(category):
     return sorted(
-        file.stem
+        file.stem.replace("_", " ")
         for file in (SRC / category).iterdir()
         if file.is_file() and file.suffix == ".py"
     )
@@ -64,7 +64,7 @@ def ask(text, choices):
     return answer["choice"]
 
 def start(category, name):
-    pad = SRC / category / f"{name}.py"
+    pad = SRC / category / f"{name.replace(' ', '_')}.py"
     clear_screen()
     
     clean_name = name.replace("_", " ").upper()
@@ -80,9 +80,9 @@ def start(category, name):
         print("---------------------------------------------------")
         input("Press Enter to return to the menu...")
     except (KeyboardInterrupt, subprocess.CalledProcessError):
-       # clear_screen()
+        #clear_screen()
         print("\n\nApp closed with Ctrl+C. Returning to main menu...")
-        time.sleep(10)
+        time.sleep(5)
     
 
     
