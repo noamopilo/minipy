@@ -7,10 +7,14 @@ import inquirer
 import sys
 import os
 import time
+from inquirer.themes import Default
+import blessed
+
+term = blessed.Terminal()
 
 SRC = Path(__file__).parent
 
-BANNER = r"""
+BANNER = "\033[0;38;5;72;49m" + r"""
  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
  |  __  __   ___   _   _   ___   ____   __   __  |
 |  |  \/  | |_ _| | \ | | |_ _| |  _ \  \ \ / /   |
@@ -19,13 +23,19 @@ BANNER = r"""
  |                              |_|       |_|    |
  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-"""
+""" + "\033[0m"
+
+class MyTheme(Default):
+    def __init__(self):
+        super().__init__()
+        self.List.selection_cursor = "->"
+        self.List.selection_color = term.color(241)
 def main():
     while True:
         clear_screen()
         print(BANNER)
             
-        category = ask("Choose a category: ", 
+        category = ask("\033[1;38;5;180;49mChoose a category\033[0m", 
                     categorys() + ["\033[1;31mStop\033[0m"],)
         if category == "\033[1;31mStop\033[0m":
             clear_screen()
@@ -36,7 +46,7 @@ def main():
         print(BANNER)
             
         project = ask(
-            f"Choose a project in {category}",
+            f"\033[1;38;5;180;49mChoose a project in {category}\033[0m",
             projects(category) + ["\033[1;33mBack\033[0m"],
         )
             
@@ -60,7 +70,7 @@ def projects(category):
 def ask(text, choices):
     answer = inquirer.prompt([
         inquirer.List("choice", message=text, choices=choices)
-    ])
+    ], theme=MyTheme())
     return answer["choice"]
 
 def start(category, name):
@@ -69,9 +79,9 @@ def start(category, name):
     
     clean_name = name.replace("_", " ").upper()
     
-    print("\033[1;36m---------------------------------------------------")
+    print("\033[1;36m-------------------------------------------------------------------------")
     print(f"--> OPEN APP: {clean_name}  , Close app with Ctrl+C")
-    print("---------------------------------------------------\033[0m")
+    print("----------------------------------------------------------------------------\033[0m")
     print()
     
     try:
