@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: minipy-tools
-Version: 0.1.1
+Version: 0.1.2
 Author-email: Noé Ballieu <nonobal2812@gmail.com>
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
@@ -11,7 +11,9 @@ Requires-Dist: requests
 Requires-Dist: PyPDF2
 Requires-Dist: Pillow
 Requires-Dist: qrcode
-Requires-Dist: pytubefix
+Requires-Dist: yt-dlp
+Requires-Dist: pyaudio
+Requires-Dist: pynput
 
 ![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)
 

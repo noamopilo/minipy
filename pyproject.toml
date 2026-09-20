@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "minipy-tools"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = [{name = "Noé Ballieu", email = "nonobal2812@gmail.com"}]
 readme = "README.md"
@@ -17,7 +17,9 @@ dependencies = [
     "PyPDF2",
     "Pillow",
     "qrcode",
-    "yt-dlp"
+    "yt-dlp",
+    "pyaudio",
+    "pynput"
 ]
 
 [project.scripts]
