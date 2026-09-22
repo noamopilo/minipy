@@ -5,6 +5,7 @@
 Minipy is a CLI tool that combines small/big python tools and games in one big tool.
 
 ---
+
 ## Table of contents
 
 - [**Minipy**](#minipy)
@@ -35,14 +36,25 @@ This is the file structure of the package:
 
 ```md
 └── 📁minipy
-    └── 📁games
-        ├── snake.py
-    └── 📁tools
-        ├── dice.py
-        ├── link_shortner.py
-        ├── send_email.py
-    ├── __init__.py
-    └── main.py
+└── 📁games
+├── number_guessing.py
+├── rock_paper_scissor.py
+├── snake.py
+├── tic_tac_toe.py
+└── 📁tools
+├── auto_clicker.py
+├── calculator.py
+├── dice.py
+├── ip_locator.py
+├── link_shortner.py
+├── pdf_merger.py
+├── QR_code_generator.py
+├── random_password_generator.py
+├── send_email.py
+├── voice_recorder.py
+├── youtube_downloader.py
+├── **init**.py
+└── main.py
 ```
 
 ---
@@ -51,7 +63,7 @@ This is the file structure of the package:
 
 For some tools/games you need some configuration. The configuration will redirect you to README for instructions. You can find those here:
 
->### Link shortner
+> ### Link shortner
 
 You need to have a cuttly API key to be able to shorten links.
 To create one follow these steps:
@@ -60,12 +72,12 @@ To create one follow these steps:
 2. Create an account / login
 3. In your dashboard, go to **API** and then **API key** on the left menu
 
-  ![menu](image-1.png)
+![menu](image-1.png)
 
 4. You can find your API key on the right side of that page
 5. Copy it and Paste it in the configuration when asked
 
->### Send email
+> ### Send email
 
 You need to have a Google App-password to be able to send an email.
 This is a second password to your Google account, we can use it in our app to send an mail with Gmail.
@@ -73,9 +85,9 @@ To create one follow these steps:
 
 1. Go to your [Google account settings](https://myaccount.google.com/)
 2. In the menu on the left click **Security**
-3. Click on  **2-step verification** and ensure it is turned **ON**, if not turn it on
+3. Click on **2-step verification** and ensure it is turned **ON**, if not turn it on
 4. Scroll down untill you see **App passwords** and click on it
-5. Type a name for your new App password (this can be anything, like *Email sender*)
+5. Type a name for your new App password (this can be anything, like _Email sender_)
 6. Click on make
 7. Copy or write down the 16 chars password you see (This is important, because you can't see it again later!)
 8. Enter it in the configuration when asked
