@@ -20,7 +20,7 @@ Kijk welke bestanden er zijn aangepast of toegevoegd.
 git status
 ```
 
-*(Als het goed is, zie je nu je gewijzigde README.md en je nieuwe afbeeldingen in het rood staan).*
+_(Als het goed is, zie je nu je gewijzigde README.md en je nieuwe afbeeldingen in het rood staan)._
 
 ## ➕ Stap 3: Voeg de bestanden toe aan de wachtrij
 
