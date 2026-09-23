@@ -36,25 +36,25 @@ This is the file structure of the package:
 
 ```md
 └── 📁minipy
-└── 📁games
-├── number_guessing.py
-├── rock_paper_scissor.py
-├── snake.py
-├── tic_tac_toe.py
-└── 📁tools
-├── auto_clicker.py
-├── calculator.py
-├── dice.py
-├── ip_locator.py
-├── link_shortner.py
-├── pdf_merger.py
-├── QR_code_generator.py
-├── random_password_generator.py
-├── send_email.py
-├── voice_recorder.py
-├── youtube_downloader.py
-├── **init**.py
-└── main.py
+    └── 📁games
+        ├── number_guessing.py
+        ├── rock_paper_scissor.py
+        ├── snake.py
+        ├── tic_tac_toe.py
+    └── 📁tools
+        ├── auto_clicker.py
+        ├── calculator.py
+        ├── dice.py
+        ├── ip_locator.py
+        ├── link_shortner.py
+        ├── pdf_merger.py
+        ├── QR_code_generator.py
+        ├── random_password_generator.py
+        ├── send_email.py
+        ├── voice_recorder.py
+        ├── youtube_downloader.py
+    ├── __init__.py
+    └── main.py
 ```
 
 ---
