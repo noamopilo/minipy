@@ -92,7 +92,7 @@ def start(category, name):
     except (KeyboardInterrupt, subprocess.CalledProcessError):
         #clear_screen()
         print("\n\nApp closed, Returning to main menu...")
-        time.sleep(5)
+        time.sleep(0.8)
     
 
     

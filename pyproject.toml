@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "minipy-tools"
-version = "0.1.2"
+version = "0.1.3"
 description = ""
 authors = [{name = "Noé Ballieu", email = "nonobal2812@gmail.com"}]
 readme = "README.md"
@@ -19,8 +19,12 @@ dependencies = [
     "qrcode",
     "yt-dlp",
     "pyaudio",
-    "pynput"
+    "pynput",
+    "pillow"
 ]
 
 [project.scripts]
 minipy = "minipy.main:main"
+
+[tool.setuptools.packages.find]
+include = ["minipy*"]

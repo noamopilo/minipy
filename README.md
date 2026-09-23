@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)
+[![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/noamopilo/minipy)
 
 # **Minipy**
 
@@ -36,25 +36,25 @@ This is the file structure of the package:
 
 ```md
 └── 📁minipy
-    └── 📁games
-        ├── number_guessing.py
-        ├── rock_paper_scissor.py
-        ├── snake.py
-        ├── tic_tac_toe.py
-    └── 📁tools
-        ├── auto_clicker.py
-        ├── calculator.py
-        ├── dice.py
-        ├── ip_locator.py
-        ├── link_shortner.py
-        ├── pdf_merger.py
-        ├── QR_code_generator.py
-        ├── random_password_generator.py
-        ├── send_email.py
-        ├── voice_recorder.py
-        ├── youtube_downloader.py
-    ├── __init__.py
-    └── main.py
+└── 📁games
+├── number_guessing.py
+├── rock_paper_scissor.py
+├── snake.py
+├── tic_tac_toe.py
+└── 📁tools
+├── auto_clicker.py
+├── calculator.py
+├── dice.py
+├── ip_locator.py
+├── link_shortner.py
+├── pdf_merger.py
+├── QR_code_generator.py
+├── random_password_generator.py
+├── send_email.py
+├── voice_recorder.py
+├── youtube_downloader.py
+├── **init**.py
+└── main.py
 ```
 
 ---
@@ -72,7 +72,7 @@ To create one follow these steps:
 2. Create an account / login
 3. In your dashboard, go to **API** and then **API key** on the left menu
 
-![menu](image-1.png)
+![menu](https://raw.githubusercontent.com/noamopilo/minipy/main/image-1.png)
 
 4. You can find your API key on the right side of that page
 5. Copy it and Paste it in the configuration when asked
@@ -102,7 +102,7 @@ To find it follow these steps:
 3. Login or make an account
 4. Go to the **API keys** section
 
-![menu](image-2.png)
+![menu](https://raw.githubusercontent.com/noamopilo/minipy/main/image-2.png)
 
 5. Copy the default key or create a new one
 6. Enter it in the configuration when asked.

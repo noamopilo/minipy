@@ -8,3 +8,4 @@ qrcode
 yt-dlp
 pyaudio
 pynput
+pillow
