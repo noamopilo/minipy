@@ -36,25 +36,25 @@ This is the file structure of the package:
 
 ```md
 └── 📁minipy
-    └── 📁games
-        ├── number_guessing.py
-        ├── rock_paper_scissor.py
-        ├── snake.py
-        ├── tic_tac_toe.py
-    └── 📁tools
-        ├── auto_clicker.py
-        ├── calculator.py
-        ├── dice.py
-        ├── ip_locator.py
-        ├── link_shortner.py
-        ├── pdf_merger.py
-        ├── QR_code_generator.py
-        ├── random_password_generator.py
-        ├── send_email.py
-        ├── voice_recorder.py
-        ├── youtube_downloader.py
-    ├── __init__.py
-    └── main.py
+└── 📁games
+├── number_guessing.py
+├── rock_paper_scissor.py
+├── snake.py
+├── tic_tac_toe.py
+└── 📁tools
+├── auto_clicker.py
+├── calculator.py
+├── dice.py
+├── ip_locator.py
+├── link_shortner.py
+├── pdf_merger.py
+├── QR_code_generator.py
+├── random_password_generator.py
+├── send_email.py
+├── voice_recorder.py
+├── youtube_downloader.py
+├── **init**.py
+└── main.py
 ```
 
 ---
@@ -91,6 +91,21 @@ To create one follow these steps:
 6. Click on make
 7. Copy or write down the 16 chars password you see (This is important, because you can't see it again later!)
 8. Enter it in the configuration when asked
+
+> ### Weather App
+
+You need to have a Open Weather Map API key to be able to see the weather data.
+To find it follow these steps:
+
+1. Go to [https://openweathermap.org/](https://openweathermap.org/)
+2. Click on the **Get API key** button
+3. Login or make an account
+4. Go to the **API keys** section
+
+![menu](image-2.png)
+
+5. Copy the default key or create a new one
+6. Enter it in the configuration when asked.
 
 ---
 
