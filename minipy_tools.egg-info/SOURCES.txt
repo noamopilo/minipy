@@ -1,3 +1,4 @@
+LICENSE
 README.md
 pyproject.toml
 minipy/__init__.py
@@ -16,6 +17,7 @@ minipy/tools/ip_locator.py
 minipy/tools/link_shortner.py
 minipy/tools/pdf_merger.py
 minipy/tools/random_password_generator.py
+minipy/tools/screenshot_taker.py
 minipy/tools/send_email.py
 minipy/tools/voice_recorder.py
 minipy/tools/weather.py

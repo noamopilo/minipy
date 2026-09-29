@@ -10,14 +10,13 @@ I used some blogs and YouTube videos to make the base of some tools/games, then 
 
 ---
 
-## Table of contents
+## Table of content
 
 - [**Minipy**](#minipy)
-  - [Table of contents](#table-of-contents)
+  - [Table of content](#table-of-content)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Features](#features)
-  - [| tool | weather | A weather app to get the current weather of any city in the world. | requests, pathlib, os, dotenv | yes, API key |](#-tool--weather--a-weather-app-to-get-the-current-weather-of-any-city-in-the-world--requests-pathlib-os-dotenv--yes-api-key-)
   - [File structure](#file-structure)
   - [Configuration](#configuration)
   - [Support](#support)
@@ -43,7 +42,6 @@ pip install minipy-tools
 To run the program run this command on your computer:
 
 ```bash
-
 minipy
 
 ```
@@ -76,6 +74,7 @@ Some tools/games have a GUI using Tkinter which is very intuitive to use.
 | tool | send email | A simple program to send emails with your Gmail. | os, click, smtplib, pathlib, email.message, dotenv | yes, Google app password |
 | tool | voice recorder | A voice recorder program (with GUI). | os, wave, time, threading, Tkinter, pyaudio, pathlib |  |
 | tool | weather | A weather app to get the current weather of any city in the world. | requests, pathlib, os, dotenv | yes, API key |
+
 ---
 
 ## File structure
