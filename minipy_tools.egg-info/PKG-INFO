@@ -16,6 +16,8 @@ Requires-Dist: qrcode
 Requires-Dist: yt-dlp
 Requires-Dist: pyaudio
 Requires-Dist: pynput
+Requires-Dist: keyboard
+Requires-Dist: pyautogui
 Dynamic: license-file
 
 [![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/noamopilo/minipy)

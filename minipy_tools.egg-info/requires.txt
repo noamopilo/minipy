@@ -8,3 +8,5 @@ qrcode
 yt-dlp
 pyaudio
 pynput
+keyboard
+pyautogui

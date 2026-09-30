@@ -12,6 +12,7 @@ minipy/tools/QR_code_generator.py
 minipy/tools/auto_clicker.py
 minipy/tools/calculator.py
 minipy/tools/dice.py
+minipy/tools/fun_fact_generator.py
 minipy/tools/image_editor.py
 minipy/tools/ip_locator.py
 minipy/tools/link_shortner.py
