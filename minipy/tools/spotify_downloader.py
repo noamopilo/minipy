@@ -1,6 +1,4 @@
 import subprocess
-import spotdl
-import shutil
 from pathlib import Path
 
 downloads_folder = Path.home() / "Downloads"
