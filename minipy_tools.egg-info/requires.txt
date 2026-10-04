@@ -10,3 +10,5 @@ pyaudio
 pynput
 keyboard
 pyautogui
+spotdl
+FFmpeg

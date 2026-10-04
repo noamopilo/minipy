@@ -22,7 +22,9 @@ dependencies = [
     "pyaudio",
     "pynput",
     "keyboard",
-    "pyautogui"
+    "pyautogui",
+    "spotdl",
+    "FFmpeg"
 ]
 
 [project.scripts]
