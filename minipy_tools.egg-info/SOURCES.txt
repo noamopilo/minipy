@@ -29,6 +29,7 @@ minipy/tools/timer.py
 minipy/tools/unit_converter.py
 minipy/tools/voice_recorder.py
 minipy/tools/weather.py
+minipy/tools/youtube_downloader.py
 minipy_tools.egg-info/PKG-INFO
 minipy_tools.egg-info/SOURCES.txt
 minipy_tools.egg-info/dependency_links.txt

@@ -55,25 +55,34 @@ Some tools/games have a GUI using Tkinter which is very intuitive to use.
 
 ## Features
 
-| **tool/game** | **name** | **short description** | **tools used** | **setup?** |
-|:---:|:---:|:---:|---|---|
-| game | hangman | A basic hangman game. | random |  |
-| game | number guessing | A simple number guessing game. | random |  |
-| game | rock paper scissors | You know the game. | random |  |
-| game | snake | A snake game with GUI. | random, Tkinter |  |
-| game | tic tac toe | A tic tac toe game where you can choose to play against another player or a computer. (With GUI) | random, Tkinter |  |
-| tool | auto clicker | An autoclicker. | time, threading, pynput |  |
-| tool | calculator | A calculator with GUI. | Tkinter |  |
-| tool | dice | A very simple dice rolling system. | random |  |
-| tool | image editor | An image editor to apply some filters (with GUI). | Tkinter, Pillow |  |
-| tool | ip locator | A tool to locate any public IP address. | requests, os, Pillow, io, Tkinter, dotenv, pathlib | yes, API key |
-| tool | link shortener | A link shortener (works with Cutt.ly). | requests, os, dotenv, pathlib | yes, API key |
-| tool | pdf merger | A PDF merger (To merge 2 PDFs). | PyPDF2, sys, os, shutil, pathlib |  |
-| tool | QR code generator | A simple QR code generator. | qrcode, pathlib, Tkinter, Pillow |  |
-| tool | random password generator | A random password generator to generate a password with some requirements and a specific length. | random, string |  |
-| tool | send email | A simple program to send emails with your Gmail. | os, click, smtplib, pathlib, email.message, dotenv | yes, Google app password |
-| tool | voice recorder | A voice recorder program (with GUI). | os, wave, time, threading, Tkinter, pyaudio, pathlib |  |
-| tool | weather | A weather app to get the current weather of any city in the world. | requests, pathlib, os, dotenv | yes, API key |
+| **tool/game** |          **name**           |                                      **short description**                                       | **tools used**                                       | **setup?**                            |
+| :-----------: | :-------------------------: | :----------------------------------------------------------------------------------------------: | ---------------------------------------------------- | ------------------------------------- |
+|     game      |           hangman           |                                      A basic hangman game.                                       | random                                               |                                       |
+|     game      |       number guessing       |                                  A simple number guessing game.                                  | random                                               |                                       |
+|     game      |     rock paper scissors     |                                        You know the game.                                        | random                                               |                                       |
+|     game      |            snake            |                                      A snake game with GUI.                                      | random, Tkinter                                      |                                       |
+|     game      |         tic tac toe         | A tic tac toe game where you can choose to play against another player or a computer. (With GUI) | random, Tkinter                                      |                                       |
+|     tool      |        auto clicker         |                                         An autoclicker.                                          | time, threading, pynput                              |                                       |
+|     tool      |         calculator          |                                      A calculator with GUI.                                      | Tkinter                                              |                                       |
+|     tool      |            dice             |                                A very simple dice rolling system.                                | random                                               |                                       |
+|     tool      |        image editor         |                        An image editor to apply some filters (with GUI).                         | Tkinter, Pillow                                      |                                       |
+|     tool      |         ip locator          |                             A tool to locate any public IP address.                              | requests, os, Pillow, io, Tkinter, dotenv, pathlib   | yes, API key                          |
+|     tool      |       link shortener        |                              A link shortener (works with Cutt.ly).                              | requests, os, dotenv, pathlib                        | yes, API key                          |
+|     tool      |         pdf merger          |                                 A PDF merger (To merge 2 PDFs).                                  | PyPDF2, sys, os, shutil, pathlib                     |                                       |
+|     tool      |      QR code generator      |                                   A simple QR code generator.                                    | qrcode, pathlib, Tkinter, Pillow                     |                                       |
+|     tool      |  random password generator  | A random password generator to generate a password with some requirements and a specific length. | random, string                                       |                                       |
+|     tool      |         send email          |                         A simple program to send emails with your Gmail.                         | os, click, smtplib, pathlib, email.message, dotenv   | yes, Google app password              |
+|     tool      |       voice recorder        |                               A voice recorder program (with GUI).                               | os, wave, time, threading, Tkinter, pyaudio, pathlib |                                       |
+|     tool      |           weather           |                A weather app to get the current weather of any city in the world.                | requests, pathlib, os, dotenv                        | yes, API key                          |
+|     tool      |     spotify downloader      |                     An app to download any spotify track, playlist or album.                     | subprocess, pathlib, spotdl                          |                                       |
+|     tool      |     youtube downloader      |                             A tool to dwonload any video on youtube.                             | subprocess, pathlib, yt-dlp                          | yes, FFmpeg install (see instalation) |
+|     tool      |       age calculator        |                             An app to calculate an age from a date.                              | datetime, dateutil                                   |                                       |
+|     tool      | character and words counter |                  A tool to count characters, words or both from a inputed text.                  | click                                                |                                       |
+|     tool      |            clock            |                                    A digital clock with GUI.                                     | tkinter, time                                        |                                       |
+|     tool      |     fun fact generator      |                             An app that generates fun facts for you.                             | requests, json                                       |                                       |
+|     tool      |      spelling checker       |               A tool to check the spelling of a text (sometimes it makes errors).                | requests, click                                      |                                       |
+|     tool      |            timer            |           A timer where you put a time in seconds and it will count down (with alarm).           | time, playsound                                      |                                       |
+|     tool      |       unit converter        |                                An app with GUI to convert units.                                 | tkinter                                              |                                       |
 
 ---
 
@@ -83,6 +92,8 @@ This is the file structure of the package:
 
 ```text
 └── 📁minipy
+    └── 📁assets
+        ├── alarm.mp3
     └── 📁games
         ├── hangman.py
         ├── number_guessing.py
@@ -90,18 +101,28 @@ This is the file structure of the package:
         ├── snake.py
         ├── tic_tac_toe.py
     └── 📁tools
+        ├── age_calculator.py
         ├── auto_clicker.py
         ├── calculator.py
+        ├── character_and_words_counter.py
+        ├── clock.py
         ├── dice.py
+        ├── fun_fact_generator.py
         ├── image_editor.py
         ├── ip_locator.py
         ├── link_shortner.py
         ├── pdf_merger.py
         ├── QR_code_generator.py
         ├── random_password_generator.py
+        ├── screenshot_taker.py
         ├── send_email.py
+        ├── spelling_checker.py
+        ├── spotify_downloader.py
+        ├── timer.py
+        ├── unit_converter.py
         ├── voice_recorder.py
         ├── weather.py
+        ├── youtube_downloader.py
     ├── __init__.py
     └── main.py
 ```
