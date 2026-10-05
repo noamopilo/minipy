@@ -24,7 +24,7 @@ dependencies = [
     "keyboard",
     "pyautogui",
     "spotdl",
-    "FFmpeg"
+    "deno"
 ]
 
 [project.scripts]
