@@ -58,7 +58,7 @@ def main():
             continue
 
 def categorys():
-    return sorted(file.name for file in SRC.iterdir() if file.is_dir() and file.name != "venv" and file.name != "__pycache__" and not file.name.startswith("."))
+    return sorted(file.name for file in SRC.iterdir() if file.is_dir() and file.name != "venv" and file.name != "__pycache__" and file.name != "assets" and not file.name.startswith("."))
 
 def projects(category):
     return sorted(

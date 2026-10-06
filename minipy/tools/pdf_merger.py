@@ -1,4 +1,4 @@
-import PyPDF2
+import pypdf
 import sys
 import os
 import shutil
@@ -11,7 +11,7 @@ if not folder_path.exists():
     folder_path.mkdir(parents=True, exist_ok=True)
     
 
-merger = PyPDF2.PdfMerger()
+merger = pypdf.PdfWriter()
 pdf = "no"
 
 print(f"Put the pdfs that you want merged in the /minipy_PDFS folder in your Downloads (this is a temporary folder and will be deleted after merging)\n")
@@ -41,7 +41,5 @@ try:
     output_path = downloads_path / filename
     merger.write(str(output_path))
     merger.close()
-
-    shutil.rmtree(folder_path)
 finally:
     shutil.rmtree(folder_path)

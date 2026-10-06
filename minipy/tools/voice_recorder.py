@@ -1,10 +1,14 @@
-import os
+import sys
 import wave
 import time
 import threading
 import tkinter as tk
-import pyaudio
 from pathlib import Path
+
+try:
+    import pyaudio
+except ImportError:
+    sys.exit("pyaudio is not installed. Run this first: pip install minipy-tools[audio]")
 
 downloads_folder = Path.home() / "Downloads"
 
@@ -30,6 +34,7 @@ class Recorder:
     
     def record(self):
         audio = pyaudio.PyAudio()
+        sample_width = audio.get_sample_width(pyaudio.paInt16)
         stream = audio.open(format=pyaudio.paInt16, channels=1, rate=44100, input=True, frames_per_buffer=1024)
         frames = []
         start = time.time()
@@ -57,11 +62,11 @@ class Recorder:
         
         sound_file = wave.open(str(full_path), "wb")
         sound_file.setnchannels(1)
-        sound_file.setsampwidth(audio.get_sample_size(pyaudio.paInt16))
+        sound_file.setsampwidth(sample_width)
         sound_file.setframerate(44100)
         sound_file.writeframes(b"".join(frames))
         sound_file.close()
-        print("Recording saved in your Downloads as: recording{i}.wav")
+        print(f"Recording saved in your Downloads as: recording{i}.wav")
                 
 
 Recorder()

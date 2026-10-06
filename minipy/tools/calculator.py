@@ -101,7 +101,7 @@ def button_clicked(value):
             label["text"] = remove_zero_decimal(result)  
     else:
         if value == ".":
-            if value not in label["text"] and len(label["text"] < 9):
+            if value not in label["text"] and len(label["text"]) < 9:
                 label["text"] += value
         elif value in "0123456789":
             if len(label["text"]) < 9:

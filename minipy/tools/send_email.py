@@ -65,8 +65,8 @@ def send_email(sender, password, receiver, subject, message):
             smtp.login(sender, password)
             smtp.send_message(msg)
         print("Email sent! --> ")
-    except:
-        print(f"Failed to send email. Error: {Exception}")
+    except Exception as e:
+        print(f"Failed to send email. Error: {e}")
     
 
 if __name__ == "__main__":

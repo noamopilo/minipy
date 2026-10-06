@@ -1,5 +1,6 @@
 import requests
 import click
+import sys
 
 def get_multiline_input_editor():
     instruction_text = "#type your text above. Save the file and close it to continue."
@@ -27,7 +28,8 @@ try:
     response.raise_for_status()
     data = response.json()
 except Exception as e:
-    print("Error when calling API: {e}")
+    print(f"Error when calling API: {e}")
+    sys.exit(1)
 
 
 def check_spelling():
