@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "minipy-tools"
 version = "0.1.4"
-description = ""
+description = "Minipy is a CLI tool that combines Python tools and games into one program. I created this program to become better in Python and to learn new things. I used some blogs and YouTube videos to make the base of some tools/games, then I customized them and experimented with them."
 authors = [{name = "Noé Ballieu", email = "nonobal2812@gmail.com"}]
 readme = "README.md"
 license = "MIT"
@@ -28,6 +28,8 @@ dependencies = [
     "playsound",
     "python-dateutil",
     "blessed",
+    "english-words",
+    "wordfreq"
 ]
 
 [project.optional-dependencies]
