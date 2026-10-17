@@ -30,7 +30,8 @@ dependencies = [
     "blessed",
     "english-words",
     "wordfreq",
-    "rembg[cpu]"
+    "rembg[cpu]",
+    "pygame"
 ]
 
 [project.optional-dependencies]

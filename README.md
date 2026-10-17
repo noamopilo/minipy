@@ -118,6 +118,7 @@ Some tools/games have a GUI using Tkinter which is very intuitive to use.
 |     game      |     rock paper scissors     |                                        You know the game.                                        | random                                               |                                          |
 |     game      |            snake            |                                      A snake game with GUI.                                      | random, Tkinter                                      |                                          |
 |     game      |         tic tac toe         | A tic tac toe game where you can choose to play against another player or a computer. (With GUI) | random, Tkinter                                      |                                          |
+|     game      |        word scramble        |                       A game where you need tp unscramble an english word.                       | random, english_words, wordfreq                      |                                          |
 |     tool      |        auto clicker         |                                         An autoclicker.                                          | time, threading, pynput                              |                                          |
 |     tool      |         calculator          |                                      A calculator with GUI.                                      | Tkinter                                              |                                          |
 |     tool      |            dice             |                                A very simple dice rolling system.                                | random                                               |                                          |
@@ -140,6 +141,7 @@ Some tools/games have a GUI using Tkinter which is very intuitive to use.
 |     tool      |            timer            |           A timer where you put a time in seconds and it will count down (with alarm).           | time, playsound                                      |                                          |
 |     tool      |       unit converter        |                                An app with GUI to convert units.                                 | tkinter                                              |                                          |
 |     tool      |      screenshot taker       |                    A simple program that takes a screenshot with a shortcut.                     | pyautogui, keyboard, os, pathlib, datetime           |                                          |
+|     tool      |      remove background      |                       A program that deletes the background of yout image.                       | os, rembg, pillow, pathlib, shutil, sys              |                                          |
 
 ---
 

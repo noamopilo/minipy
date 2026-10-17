@@ -3,7 +3,6 @@ os.environ["OMP_NUM_THREADS"] = "2"
 
 from rembg import remove, new_session
 from PIL import Image
-import io
 from pathlib import Path
 import shutil
 import sys
