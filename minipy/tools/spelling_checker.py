@@ -4,7 +4,7 @@ import sys
 
 def get_multiline_input_editor():
     instruction_text = "#type your text above. Save the file and close it to continue."
-    message = click.edit(f"\n\n{instruction_text}").strip()
+    message = click.edit(f"\n\n{instruction_text}")
     
     if message:
         final_message = message.replace(instruction_text, "").strip()

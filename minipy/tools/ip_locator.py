@@ -74,7 +74,7 @@ def locate_ip():
         if answer == "y":
             print("Image opening in new window...")
             show_img(flag_image_url)
-    except:
+    except Exception:
         print("Something went wrong, please check your API key, IP adress or Internet connection and try again.")
 
 locate_ip()

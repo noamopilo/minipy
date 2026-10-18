@@ -1,6 +1,8 @@
 import time
 from pathlib import Path
-from playsound import playsound
+import pygame
+
+alarm = str(Path(__file__).resolve().parent.parent / "assets" / "alarm.mp3")
 
 my_time = int(input("Enter the time in seconds: ").strip())
 
@@ -13,4 +15,8 @@ for x in range(my_time, 0, -1):
     time.sleep(1)
 
 print("!!!  TIME UP  !!!")
-playsound(str(Path(__file__).resolve().parent.parent / "assets" / "alarm.mp3"))
+pygame.mixer.init()
+sound = pygame.mixer.Sound(alarm)
+sound.play()
+while pygame.mixer.get_busy():
+    time.sleep(0.1)

@@ -17,7 +17,7 @@ I used some blogs and YouTube videos to make the base of some tools/games, then 
   - [Table of content](#table-of-content)
   - [Installation](#installation)
     - [Optional: Voice Recorder](#optional-voice-recorder)
-    - [Optional: Youtube Downloader](#optional-youtube-downloader)
+    - [Optional: Youtube \& Spotify Downloader](#optional-youtube--spotify-downloader)
   - [Usage](#usage)
   - [Features](#features)
   - [File structure](#file-structure)
@@ -30,7 +30,7 @@ I used some blogs and YouTube videos to make the base of some tools/games, then 
 
 ## Installation
 
-Python 3.10 or higher is required.
+Python 3.10 - 3.13 is required.
 To install minipy run this command in your terminal:
 
 ```bash
@@ -63,9 +63,9 @@ sudo apt install portaudio19-dev
 
 ```
 
-### Optional: Youtube Downloader
+### Optional: Youtube & Spotify Downloader
 
-You need to have FFmpeg installed to have a correct video output.
+You need to have FFmpeg installed for the Youtube and Spotify downloaders.
 It is not installed by pip so run this command to install it:
 
 windows:
@@ -114,6 +114,7 @@ Some tools/games have a GUI using Tkinter which is very intuitive to use.
 | **tool/game** |          **name**           |                                      **short description**                                       | **tools used**                                       | **setup?**                               |
 | :-----------: | :-------------------------: | :----------------------------------------------------------------------------------------------: | ---------------------------------------------------- | ---------------------------------------- |
 |     game      |           hangman           |                                      A basic hangman game.                                       | random                                               |                                          |
+|     game      |            pong             |                                  The pong game everyone knows.                                   | Turtle, Pygame, pathlib, time                        |                                          |
 |     game      |       number guessing       |                                  A simple number guessing game.                                  | random                                               |                                          |
 |     game      |     rock paper scissors     |                                        You know the game.                                        | random                                               |                                          |
 |     game      |            snake            |                                      A snake game with GUI.                                      | random, Tkinter                                      |                                          |
@@ -153,15 +154,20 @@ This is the file structure of the package:
 └── 📁minipy
     └── 📁assets
         ├── alarm.mp3
+        ├── pong1.mp3
+        ├── pong2.mp3
     └── 📁games
         ├── hangman.py
         ├── number_guessing.py
+        ├── pong.py
         ├── rock_paper_scissor.py
         ├── snake.py
         ├── tic_tac_toe.py
+        ├── word_scramble.py
     └── 📁tools
         ├── age_calculator.py
         ├── auto_clicker.py
+        ├── background_remover.py
         ├── calculator.py
         ├── character_and_words_counter.py
         ├── clock.py
@@ -235,6 +241,25 @@ To find it follow these steps:
 
 5. Copy the default key or create a new one
 6. Enter it in the configuration when asked.
+
+> ### Ip locator
+
+You need an Abstract IP API key to use this program.
+To create one follow these steps:
+
+1. Go to [https://www.abstractapi.com/api/ip-geolocation-api](https://www.abstractapi.com/api/ip-geolocation-api)
+2. Click on **Start for free**
+3. Login or create an account
+4. Once your loged in you should be on this page
+
+![dashboard](https://raw.githubusercontent.com/noamopilo/minipy/main/image-3.png)
+
+5. Click on the view api keys link
+
+![button](https://raw.githubusercontent.com/noamopilo/minipy/main/image-4.png)
+
+6. You can create a new one or just copy the primary API key
+7. Paste it when asked in the program
 
 ---
 

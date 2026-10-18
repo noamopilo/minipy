@@ -34,7 +34,7 @@ class Recorder:
     
     def record(self):
         audio = pyaudio.PyAudio()
-        sample_width = audio.get_sample_width(pyaudio.paInt16)
+        sample_width = pyaudio.get_sample_size(pyaudio.paInt16)
         stream = audio.open(format=pyaudio.paInt16, channels=1, rate=44100, input=True, frames_per_buffer=1024)
         frames = []
         start = time.time()

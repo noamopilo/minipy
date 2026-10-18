@@ -7,6 +7,7 @@ import inquirer
 import sys
 import os
 import time
+import runpy
 from inquirer.themes import Default
 import blessed
 
@@ -85,14 +86,17 @@ def start(category, name):
     print()
     
     try:
-        subprocess.run([sys.executable, str(pad)], check=True)
-        print()
-        print("---------------------------------------------------")
-        input("Press Enter to return to the menu...")
-    except (KeyboardInterrupt, subprocess.CalledProcessError):
-        #clear_screen()
-        print("\n\nApp closed, Returning to main menu...")
-        time.sleep(0.8)
+        runpy.run_path(str(pad), run_name="__main__")
+    except KeyboardInterrupt:
+        print("\n\nApp closed.")
+    except SystemExit:
+        pass
+    except Exception as e:
+        print(f"Something went wrong: {e}")
+    
+    print()
+    print("------------------------------------------------")
+    print("Press Enter to return to the menu...")
     
 
     

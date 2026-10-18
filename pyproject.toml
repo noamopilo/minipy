@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "minipy-tools"
-version = "0.1.4"
+version = "0.1.5"
 description = "Minipy is a CLI tool that combines Python tools and games into one program. I created this program to become better in Python and to learn new things. I used some blogs and YouTube videos to make the base of some tools/games, then I customized them and experimented with them."
 authors = [{name = "Noé Ballieu", email = "nonobal2812@gmail.com"}]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.10"
+requires-python = ">=3.10, <3.14"
 keywords = ["cli", "tools", "games", "terminal", "useful", "utility", "python"]
 dependencies = [
     "inquirer",
@@ -25,7 +25,6 @@ dependencies = [
     "keyboard",
     "pyautogui",
     "spotdl",
-    "playsound",
     "python-dateutil",
     "blessed",
     "english-words",
@@ -45,3 +44,8 @@ include = ["minipy*"]
 
 [tool.setuptools.package-data]
 minipy = ["assets/*.mp3"]
+
+[project.urls]
+Homepage = "https://github.com/noamopilo/minipy"
+Repository = "https://github.com/noamopilo/minipy"
+Issues = "https://github.com/noamopilo/minipy/issues"

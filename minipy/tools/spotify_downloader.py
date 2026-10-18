@@ -10,7 +10,6 @@ def spotify_download(url):
     try:
         result = subprocess.run(command, check=True, text=True)
         print("Succesfully downloaded and saved in your downloads folder.")
-        print(result.stdout)
     except subprocess.CalledProcessError as e:
         print(f"An error ocurred: {e}")
 
