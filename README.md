@@ -207,7 +207,7 @@ To create one follow these steps:
 2. Create an account / login
 3. In your dashboard, go to **API** and then **API key** on the left menu
 
-![menu](https://github.com/noamopilo/minipy/blob/main/images/image-1.png)
+![menu](https://raw.githubusercontent.com/noamopilo/minipy/main/images/image-1.png)
 
 4. You can find your API key on the right side of that page
 5. Copy it and paste it in the configuration when asked
@@ -237,7 +237,7 @@ To find it follow these steps:
 3. Login or make an account
 4. Go to the **API keys** section
 
-![menu](https://github.com/noamopilo/minipy/blob/main/images/image-2.png)
+![menu](https://raw.githubusercontent.com/noamopilo/minipy/main/images/image-2.png)
 
 5. Copy the default key or create a new one
 6. Enter it in the configuration when asked.
@@ -252,11 +252,11 @@ To create one follow these steps:
 3. Login or create an account
 4. Once your loged in you should be on this page
 
-![dashboard](https://github.com/noamopilo/minipy/blob/main/images/image-3.png)
+![dashboard](https://raw.githubusercontent.com/noamopilo/minipy/main/images/image-3.png)
 
 5. Click on the view api keys link
 
-![button](https://github.com/noamopilo/minipy/blob/main/images/image-4.png)
+![button](https://raw.githubusercontent.com/noamopilo/minipy/main/images/image-4.png)
 
 6. You can create a new one or just copy the primary API key
 7. Paste it when asked in the program
